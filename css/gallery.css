@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li img {
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+ul li img:not(.active) {
+    filter: grayscale(100%);
+}
+
+ul li img.active {
+    filter: none;
+}
